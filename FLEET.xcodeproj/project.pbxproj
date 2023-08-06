@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2085B7151E1808DF4B29443A /* Pods_FLEET.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39F10D258CB64D596371D23C /* Pods_FLEET.framework */; };
 		5E887A2528B954D500C76583 /* SecurityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E887A2428B954D500C76583 /* SecurityManager.swift */; };
 		762FC04D2A7F72260099E00C /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 762FC04C2A7F72260099E00C /* FirebaseAnalytics */; };
 		762FC04F2A7F72260099E00C /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 762FC04E2A7F72260099E00C /* FirebaseAnalyticsOnDeviceConversion */; };
@@ -47,7 +46,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		39F10D258CB64D596371D23C /* Pods_FLEET.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FLEET.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5783F4EAF9E5EC5E820E7ACC /* Pods-FLEET.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLEET.release.xcconfig"; path = "Target Support Files/Pods-FLEET/Pods-FLEET.release.xcconfig"; sourceTree = "<group>"; };
 		5E59E82D21565CF500C9A9E3 /* FLEET.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FLEET.entitlements; sourceTree = "<group>"; };
 		5E887A2428B954D500C76583 /* SecurityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityManager.swift; sourceTree = "<group>"; };
@@ -62,6 +60,7 @@
 		CE4BBC0A1DE844300074B0CC /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		CE850DB51E18EF0A00F4F73A /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		E9768121EFF65675F122367E /* Pods-FLEET.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLEET.debug.xcconfig"; path = "Target Support Files/Pods-FLEET/Pods-FLEET.debug.xcconfig"; sourceTree = "<group>"; };
+		FEE2B424FFD3D37DFD25DCCA /* Pods-FLEET.google.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLEET.google.xcconfig"; path = "Target Support Files/Pods-FLEET/Pods-FLEET.google.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +96,6 @@
 				762FC0632A7F72260099E00C /* FirebaseDynamicLinks in Frameworks */,
 				762FC0652A7F72260099E00C /* FirebaseFirestore in Frameworks */,
 				762FC07D2A7F72260099E00C /* FirebaseRemoteConfigSwift in Frameworks */,
-				2085B7151E1808DF4B29443A /* Pods_FLEET.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,7 +141,6 @@
 			isa = PBXGroup;
 			children = (
 				CE4BBC0A1DE844300074B0CC /* WebKit.framework */,
-				39F10D258CB64D596371D23C /* Pods_FLEET.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -153,6 +150,7 @@
 			children = (
 				E9768121EFF65675F122367E /* Pods-FLEET.debug.xcconfig */,
 				5783F4EAF9E5EC5E820E7ACC /* Pods-FLEET.release.xcconfig */,
+				FEE2B424FFD3D37DFD25DCCA /* Pods-FLEET.google.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -390,6 +388,7 @@
 		};
 		CBA62FAB1F5E143600BEDA76 /* Google */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEE2B424FFD3D37DFD25DCCA /* Pods-FLEET.google.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
