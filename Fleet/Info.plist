@@ -35,7 +35,6 @@
 	<string>Location permission is required to display current location on the map.</string>
 	<key>UIBackgroundModes</key>
 	<array>
-		<string>processing</string>
 		<string>remote-notification</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
