@@ -14,8 +14,6 @@
 // limitations under the License.
 //
 
-//JABGROUP WORK
-
 import UIKit
 import WebKit
 

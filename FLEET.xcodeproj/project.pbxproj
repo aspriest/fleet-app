@@ -402,6 +402,7 @@
 				INFOPLIST_FILE = Fleet/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "FLEET - Car Tracking";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -539,6 +540,7 @@
 				INFOPLIST_FILE = Fleet/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "FLEET - Car Tracking";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -570,6 +572,7 @@
 				INFOPLIST_FILE = Fleet/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "FLEET - Car Tracking";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
