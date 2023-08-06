@@ -44,7 +44,7 @@ class SecurityManager {
             kSecAttrAccount: SecurityManager.account,
             kSecClass: kSecClassGenericPassword,
             kSecReturnData: true
-        ] as CFDictionary, &result)
+        ] as [CFString : Any] as CFDictionary, &result)
         if let data = result as? Data {
             return String(data: data, encoding: .utf8)
         }
@@ -56,7 +56,7 @@ class SecurityManager {
             kSecAttrService: SecurityManager.service,
             kSecAttrAccount: SecurityManager.account,
             kSecClass: kSecClassGenericPassword,
-        ] as CFDictionary)
+        ] as [CFString : Any] as CFDictionary)
     }
 
 }
