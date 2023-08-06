@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		592A99A41C134B3603F942AF /* Pods_FLEET.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 826B0953871D08CB45522689 /* Pods_FLEET.framework */; };
 		5E887A2528B954D500C76583 /* SecurityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E887A2428B954D500C76583 /* SecurityManager.swift */; };
 		762FC04D2A7F72260099E00C /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 762FC04C2A7F72260099E00C /* FirebaseAnalytics */; };
 		762FC04F2A7F72260099E00C /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 762FC04E2A7F72260099E00C /* FirebaseAnalyticsOnDeviceConversion */; };
@@ -52,10 +51,6 @@
 		763510FB2A700215009E6328 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../traccar-manager-ios/TraccarManager/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
 		763510FE2A70022F009E6328 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../traccar-manager-ios/TraccarManager/Base.lproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
 		7686ADCA2A74A8AF008BC9A9 /* google-services */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "google-services"; sourceTree = "<group>"; };
-		826B0953871D08CB45522689 /* Pods_FLEET.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FLEET.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9C9341CDF4AADCCC743679C7 /* Pods-FLEET.google.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLEET.google.xcconfig"; path = "Target Support Files/Pods-FLEET/Pods-FLEET.google.xcconfig"; sourceTree = "<group>"; };
-		A7103D2A907D433B9B8731B9 /* Pods-FLEET.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLEET.debug.xcconfig"; path = "Target Support Files/Pods-FLEET/Pods-FLEET.debug.xcconfig"; sourceTree = "<group>"; };
-		C9F21A7D51214188E5088B91 /* Pods-FLEET.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLEET.release.xcconfig"; path = "Target Support Files/Pods-FLEET/Pods-FLEET.release.xcconfig"; sourceTree = "<group>"; };
 		CE07210F1C86EB9800D057CE /* FLEET.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FLEET.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE0721121C86EB9800D057CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE0721141C86EB9800D057CE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -98,7 +93,6 @@
 				762FC0632A7F72260099E00C /* FirebaseDynamicLinks in Frameworks */,
 				762FC0652A7F72260099E00C /* FirebaseFirestore in Frameworks */,
 				762FC07D2A7F72260099E00C /* FirebaseRemoteConfigSwift in Frameworks */,
-				592A99A41C134B3603F942AF /* Pods_FLEET.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,7 +106,6 @@
 				CE0721111C86EB9800D057CE /* Fleet */,
 				CE0721101C86EB9800D057CE /* Products */,
 				CE4BBC071DE83EEE0074B0CC /* Frameworks */,
-				F55059E465B98E7AC6904DB6 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,20 +137,8 @@
 			isa = PBXGroup;
 			children = (
 				CE4BBC0A1DE844300074B0CC /* WebKit.framework */,
-				826B0953871D08CB45522689 /* Pods_FLEET.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F55059E465B98E7AC6904DB6 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A7103D2A907D433B9B8731B9 /* Pods-FLEET.debug.xcconfig */,
-				C9F21A7D51214188E5088B91 /* Pods-FLEET.release.xcconfig */,
-				9C9341CDF4AADCCC743679C7 /* Pods-FLEET.google.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,7 +148,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE0721371C86EB9800D057CE /* Build configuration list for PBXNativeTarget "FLEET" */;
 			buildPhases = (
-				EF509BD6DF122C184469F327 /* [CP] Check Pods Manifest.lock */,
 				CE07210B1C86EB9800D057CE /* Sources */,
 				CE07210C1C86EB9800D057CE /* Frameworks */,
 				CE07210D1C86EB9800D057CE /* Resources */,
@@ -282,28 +262,6 @@
 			shellPath = /bin/sh;
 			shellScript = "if [ \"${CONFIGURATION}\" = \"Google\" ]; then\ncp -r \"${PROJECT_DIR}/google-services/traccar-manager-ios.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\n\"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\nfi\n";
 		};
-		EF509BD6DF122C184469F327 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FLEET-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -393,7 +351,6 @@
 		};
 		CBA62FAB1F5E143600BEDA76 /* Google */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9C9341CDF4AADCCC743679C7 /* Pods-FLEET.google.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -531,7 +488,6 @@
 		};
 		CE0721381C86EB9800D057CE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A7103D2A907D433B9B8731B9 /* Pods-FLEET.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
@@ -562,7 +518,6 @@
 		};
 		CE0721391C86EB9800D057CE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C9F21A7D51214188E5088B91 /* Pods-FLEET.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
