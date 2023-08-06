@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2085B7151E1808DF4B29443A /* Pods_FLEET.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39F10D258CB64D596371D23C /* Pods_FLEET.framework */; };
 		5E887A2528B954D500C76583 /* SecurityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E887A2428B954D500C76583 /* SecurityManager.swift */; };
 		762FC04D2A7F72260099E00C /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 762FC04C2A7F72260099E00C /* FirebaseAnalytics */; };
 		762FC04F2A7F72260099E00C /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 762FC04E2A7F72260099E00C /* FirebaseAnalyticsOnDeviceConversion */; };
@@ -46,6 +47,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		39F10D258CB64D596371D23C /* Pods_FLEET.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FLEET.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5783F4EAF9E5EC5E820E7ACC /* Pods-FLEET.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLEET.release.xcconfig"; path = "Target Support Files/Pods-FLEET/Pods-FLEET.release.xcconfig"; sourceTree = "<group>"; };
 		5E59E82D21565CF500C9A9E3 /* FLEET.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FLEET.entitlements; sourceTree = "<group>"; };
 		5E887A2428B954D500C76583 /* SecurityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityManager.swift; sourceTree = "<group>"; };
 		763510FB2A700215009E6328 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../traccar-manager-ios/TraccarManager/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
@@ -58,6 +61,7 @@
 		CE07211E1C86EB9800D057CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE4BBC0A1DE844300074B0CC /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		CE850DB51E18EF0A00F4F73A /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		E9768121EFF65675F122367E /* Pods-FLEET.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLEET.debug.xcconfig"; path = "Target Support Files/Pods-FLEET/Pods-FLEET.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,7 @@
 				762FC0632A7F72260099E00C /* FirebaseDynamicLinks in Frameworks */,
 				762FC0652A7F72260099E00C /* FirebaseFirestore in Frameworks */,
 				762FC07D2A7F72260099E00C /* FirebaseRemoteConfigSwift in Frameworks */,
+				2085B7151E1808DF4B29443A /* Pods_FLEET.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +111,7 @@
 				CE0721111C86EB9800D057CE /* Fleet */,
 				CE0721101C86EB9800D057CE /* Products */,
 				CE4BBC071DE83EEE0074B0CC /* Frameworks */,
+				F9427EAFB54CF61306BECC87 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,8 +143,18 @@
 			isa = PBXGroup;
 			children = (
 				CE4BBC0A1DE844300074B0CC /* WebKit.framework */,
+				39F10D258CB64D596371D23C /* Pods_FLEET.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F9427EAFB54CF61306BECC87 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E9768121EFF65675F122367E /* Pods-FLEET.debug.xcconfig */,
+				5783F4EAF9E5EC5E820E7ACC /* Pods-FLEET.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +164,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE0721371C86EB9800D057CE /* Build configuration list for PBXNativeTarget "FLEET" */;
 			buildPhases = (
+				600BBDE1854D2F90FFF98C79 /* [CP] Check Pods Manifest.lock */,
 				CE07210B1C86EB9800D057CE /* Sources */,
 				CE07210C1C86EB9800D057CE /* Frameworks */,
 				CE07210D1C86EB9800D057CE /* Resources */,
@@ -249,6 +266,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		600BBDE1854D2F90FFF98C79 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FLEET-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		CBA62FB01F5E1A9D00BEDA76 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -488,6 +527,7 @@
 		};
 		CE0721381C86EB9800D057CE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9768121EFF65675F122367E /* Pods-FLEET.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
@@ -518,6 +558,7 @@
 		};
 		CE0721391C86EB9800D057CE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5783F4EAF9E5EC5E820E7ACC /* Pods-FLEET.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
