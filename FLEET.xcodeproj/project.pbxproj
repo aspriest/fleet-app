@@ -51,8 +51,6 @@
 		763510FB2A700215009E6328 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../traccar-manager-ios/TraccarManager/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
 		763510FE2A70022F009E6328 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../traccar-manager-ios/TraccarManager/Base.lproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
 		7686ADCA2A74A8AF008BC9A9 /* google-services */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "google-services"; sourceTree = "<group>"; };
-		7E9E05B6339030A2400652F4 /* Pods-FLEET.google.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLEET.google.xcconfig"; path = "Target Support Files/Pods-FLEET/Pods-FLEET.google.xcconfig"; sourceTree = "<group>"; };
-		9CCD37016C6A4F3CDD098ED7 /* Pods-FLEET.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLEET.debug.xcconfig"; path = "Target Support Files/Pods-FLEET/Pods-FLEET.debug.xcconfig"; sourceTree = "<group>"; };
 		CE07210F1C86EB9800D057CE /* FLEET.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FLEET.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE0721121C86EB9800D057CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE0721141C86EB9800D057CE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -60,7 +58,6 @@
 		CE07211E1C86EB9800D057CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE4BBC0A1DE844300074B0CC /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		CE850DB51E18EF0A00F4F73A /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
-		EE4B0E36DFA8BBC6666E2C36 /* Pods-FLEET.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLEET.release.xcconfig"; path = "Target Support Files/Pods-FLEET/Pods-FLEET.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,16 +99,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		93302D566E0558B772E56C25 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				9CCD37016C6A4F3CDD098ED7 /* Pods-FLEET.debug.xcconfig */,
-				EE4B0E36DFA8BBC6666E2C36 /* Pods-FLEET.release.xcconfig */,
-				7E9E05B6339030A2400652F4 /* Pods-FLEET.google.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		CE0721061C86EB9800D057CE = {
 			isa = PBXGroup;
 			children = (
@@ -119,7 +106,6 @@
 				CE0721111C86EB9800D057CE /* Fleet */,
 				CE0721101C86EB9800D057CE /* Products */,
 				CE4BBC071DE83EEE0074B0CC /* Frameworks */,
-				93302D566E0558B772E56C25 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -388,7 +374,6 @@
 		};
 		CBA62FAB1F5E143600BEDA76 /* Google */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7E9E05B6339030A2400652F4 /* Pods-FLEET.google.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -526,7 +511,6 @@
 		};
 		CE0721381C86EB9800D057CE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9CCD37016C6A4F3CDD098ED7 /* Pods-FLEET.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
@@ -557,7 +541,6 @@
 		};
 		CE0721391C86EB9800D057CE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EE4B0E36DFA8BBC6666E2C36 /* Pods-FLEET.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
