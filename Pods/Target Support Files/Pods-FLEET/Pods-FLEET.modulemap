@@ -1,0 +1,6 @@
+framework module Pods_FLEET {
+  umbrella header "Pods-FLEET-umbrella.h"
+
+  export *
+  module * { export * }
+}
